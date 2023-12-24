@@ -104,3 +104,13 @@ function toggleReadMore() {
   }
   setButtonText(dots3, moreText3, myBtn3);
 }
+
+function openContactPopup() {
+  document.getElementById("overlay").style.display = "block";
+  document.getElementById("contactPopup").style.display = "block";
+}
+
+function closeContactPopup() {
+  document.getElementById("overlay").style.display = "none";
+  document.getElementById("contactPopup").style.display = "none";
+}

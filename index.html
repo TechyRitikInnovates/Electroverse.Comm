@@ -247,9 +247,8 @@
                 >
                   <li>
                     <a
-                      href="mailto:electroversecommtsec@gmail.com"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                      >Contact</a
+                      onclick="openContactPopup()">Contact</a
                     >
                   </li>
                   <li>
@@ -264,6 +263,17 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div id="overlay"></div>
+                  
+      <div id="contactPopup">
+        <span id="closePopup" onclick="closeContactPopup()">&times;</span>
+        <ul>
+          <p>Ritik Pandey:</p>
+          <li>+91 8291189618</li>
+            <p>Bhavesh Nanda:</p>
+          <li>+91 8291189618</li>
+        </ul>
       </div>
     </nav>
     <!-- nav end -->
@@ -1796,17 +1806,6 @@
               ><i class="fa-brands fa-youtube"></i
             ></a>
           </div>
-
-          <div class="row">
-            <ul>
-              <li><a href="mailto:electroversecommtsec@gmail.com">Contact Us</a></li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#venu">Venue</a></li>
-              <li><a href="#gallery">TECH-A-THON'23</a></li>
-              <li><a href="#">Register Now</a></li>
-            </ul>
-          </div>
-
           <div class="row">
             Electroverse.Comm Copyright © 2023 - All rights reserved || Designed
             By: Technical Team
@@ -1815,11 +1814,8 @@
       </footer>
     </section>
     <!-- footer end -->
-
     <!-- scripts -->
     <script src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-    <script src="node_modules/@material-tailwind/html/scripts/tabs.js"></script>
-    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js"></script>
   </body>
 </html>
