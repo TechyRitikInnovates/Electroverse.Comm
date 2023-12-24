@@ -596,14 +596,15 @@ body {
   height: 60px;
   border-radius: 50%;
 }
-/* 
+
 .footer{
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-} */
+  width: 100%;
+}
 
 #gallery_item_center{
   display: flex;
