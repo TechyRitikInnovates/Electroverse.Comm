@@ -114,3 +114,24 @@ function closeContactPopup() {
   document.getElementById("overlay").style.display = "none";
   document.getElementById("contactPopup").style.display = "none";
 }
+
+window.addEventListener('scroll', function() {
+  var arrow = document.getElementById('arrow');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    arrow.style.display = 'block';
+  } else {
+    arrow.style.display = 'none';
+  }
+});
+
+function scrollToTop() {
+  var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+  var scrollStep = -currentPosition / 30;
+  function scroll() {
+    if (document.body.scrollTop !== 0 || document.documentElement.scrollTop !== 0) {
+      window.scrollBy(0, scrollStep);
+      requestAnimationFrame(scroll);
+    }
+  }
+  scroll();
+}
