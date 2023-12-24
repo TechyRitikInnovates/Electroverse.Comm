@@ -621,3 +621,13 @@ body {
     align-content: center;
     text-align: center;
 }
+
+#more1{
+  display: none;
+}
+#more2{
+  display: none;
+}
+#more3{
+  display: none;
+}
