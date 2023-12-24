@@ -597,7 +597,7 @@ body {
   border-radius: 50%;
 }
 
-#footer_1{
+.footer{
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
