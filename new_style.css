@@ -596,3 +596,11 @@ body {
   height: 60px;
   border-radius: 50%;
 }
+
+#footer_1{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
