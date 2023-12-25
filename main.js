@@ -62,6 +62,16 @@ function closeContactPopup() {
   document.getElementById("contactPopup").style.display = "none";
 }
 
+function openSocialPopup() {
+  document.getElementById("overlay1").style.display = "block";
+  document.getElementById("socialPopup").style.display = "block";
+}
+
+function closeSocialPopup() {
+  document.getElementById("overlay1").style.display = "none";
+  document.getElementById("socialPopup").style.display = "none";
+}
+
 window.addEventListener('scroll', function() {
   var arrow = document.getElementById('arrow');
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

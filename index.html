@@ -88,7 +88,7 @@
                 href="#about"
                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
                 aria-current="page"
-                style="background-color: #0e131f; color: white;"
+                style="background-color: #0e131f; color: white"
                 >About</a
               >
             </li>
@@ -221,8 +221,8 @@
                   </li>
                   <li>
                     <a
-                      href="#footer_1"
                       style="color: white; background-color: #0e131f"
+                      onclick="openSocialPopup()"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >Socials</a
                     >
@@ -234,6 +234,7 @@
         </div>
       </div>
       <div id="overlay"></div>
+      <div id="overlay1"></div>
 
       <div id="contactPopup">
         <span id="closePopup" onclick="closeContactPopup()">&times;</span>
@@ -242,6 +243,27 @@
           <li><a href="https://wa.me/+918454988918">+91 8454988918</a></li>
           <p style="padding-top: 1em">Bhavesh Nanda:</p>
           <li><a href="https://wa.me/+919892426988">+91 9892426988</a></li>
+        </ul>
+      </div>
+      <div id="socialPopup">
+        <span id="closePopup1" onclick="closeSocialPopup()">&times;</span>
+        <ul class="wrapper">
+          <li class="icon facebook">
+            <span class="tooltip"><a href="https://www.linkedin.com/company/electroverse-comm-tsec/mycompany/">Linkedin</a></span>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+          </li>
+          <li class="icon instagram">
+            <span class="tooltip"><a href="https://www.instagram.com/electroverse.comm_tsec?igsh=MTkwcjJ5cWh4eW0yNQ==">Instagram</a></span>
+            <span><i class="fab fa-instagram"></i></span>
+          </li>
+          <li class="icon github">
+            <span class="tooltip"><a href="mailto:electroversecommtsec@gmail.com">Gmail</a></span>
+            <span><i class="fa-solid fa-envelope"></i></span>
+          </li>
+          <li class="icon youtube">
+            <span class="tooltip"><a href="https://www.youtube.com/@tsecextcdepartment8926">Youtube</a></span>
+            <span><i class="fab fa-youtube"></i></span>
+          </li>
         </ul>
       </div>
     </nav>
