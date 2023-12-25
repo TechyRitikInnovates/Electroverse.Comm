@@ -52,59 +52,6 @@ function changeContent() {
   contents[nextIndex].classList.add("active");
 }
 
-function toggleReadMore() {
-  var dots1 = document.getElementById("dots1");
-  var moreText1 = document.getElementById("more1");
-  var myBtn1 = document.getElementById("myBtn1");
-
-  var dots2 = document.getElementById("dots2");
-  var moreText2 = document.getElementById("more2");
-  var myBtn2 = document.getElementById("myBtn2");
-
-  var dots3 = document.getElementById("dots3");
-  var moreText3 = document.getElementById("more3");
-  var myBtn3 = document.getElementById("myBtn3");
-
-  // Function to check initial visibility and set button text
-  function setButtonText(dots, moreText, button) {
-    if (dots.style.display === "none" || dots.style.display === "") {
-      button.innerHTML = "Read less";
-    } else {
-      button.innerHTML = "Read more";
-    }
-  }
-
-  // Toggle visibility for content 1
-  if (dots1.style.display === "none" || dots1.style.display === "") {
-    dots1.style.display = "inline";
-    moreText1.style.display = "none";
-  } else {
-    dots1.style.display = "none";
-    moreText1.style.display = "inline";
-  }
-  setButtonText(dots1, moreText1, myBtn1);
-
-  // Toggle visibility for content 2
-  if (dots2.style.display === "none" || dots2.style.display === "") {
-    dots2.style.display = "inline";
-    moreText2.style.display = "none";
-  } else {
-    dots2.style.display = "none";
-    moreText2.style.display = "inline";
-  }
-  setButtonText(dots2, moreText2, myBtn2);
-
-  // Toggle visibility for content 3
-  if (dots3.style.display === "none" || dots3.style.display === "") {
-    dots3.style.display = "inline";
-    moreText3.style.display = "none";
-  } else {
-    dots3.style.display = "none";
-    moreText3.style.display = "inline";
-  }
-  setButtonText(dots3, moreText3, myBtn3);
-}
-
 function openContactPopup() {
   document.getElementById("overlay").style.display = "block";
   document.getElementById("contactPopup").style.display = "block";
@@ -135,3 +82,51 @@ function scrollToTop() {
   }
   scroll();
 }
+function toggleReadMoreSection1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none" || dots.style.display === "") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btnText.innerHTML = "Read More";
+  } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btnText.innerHTML = "Read Less";
+  }
+}
+
+function toggleReadMoreSection2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none" || dots.style.display === "") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btnText.innerHTML = "Read More";
+  } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btnText.innerHTML = "Read Less";
+  }
+}
+
+function toggleReadMoreSection3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none" || dots.style.display === "") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btnText.innerHTML = "Read More";
+  } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btnText.innerHTML = "Read Less";
+  }
+}
+
