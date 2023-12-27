@@ -139,4 +139,3 @@ function toggleReadMoreSection3() {
       btnText.innerHTML = "Read Less";
   }
 }
-

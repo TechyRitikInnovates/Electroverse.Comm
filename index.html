@@ -215,13 +215,21 @@
                     <a
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       onclick="openContactPopup()"
-                      style="color: white; background-color: #0e131f; cursor: pointer;"
+                      style="
+                        color: white;
+                        background-color: #0e131f;
+                        cursor: pointer;
+                      "
                       >Contact</a
                     >
                   </li>
                   <li>
                     <a
-                      style="color: white; background-color: #0e131f; cursor: pointer;"
+                      style="
+                        color: white;
+                        background-color: #0e131f;
+                        cursor: pointer;
+                      "
                       onclick="openSocialPopup()"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >Socials</a
@@ -357,6 +365,7 @@
           <div id="minutes" class="time"></div>
           <div id="seconds" class="time"></div>
         </div>
+        <button style="color: white;background-color: aqua;">Submit</button>
       </div>
     </section>
     <!-- hero end -->
@@ -654,7 +663,7 @@
       <div class="text-center">
         <h2 class="text-4xl font-black mb-8" id="timeline_text">Timeline</h2>
       </div>
-      <div class="container1">
+      <div class="container" id="container1">
         <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
           <div class="flex md:contents">
             <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
@@ -773,7 +782,7 @@
             width="100%"
             height="auto"
             frameborder="0"
-            style="border: 0"
+            style="border: 0; filter: invert(100%);"
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
@@ -822,33 +831,37 @@
                 <h2
                   class="title-font font-medium sm:text-4xl text-3xl text-white"
                 >
-                  50000
+                  50, 000
                 </h2>
                 <p class="leading-relaxed">Price Pool</p>
               </div>
             </div>
           </div>
         </section>
+
         <div
           id="default-carousel"
           class="relative w-full"
           data-carousel="slide"
-          style="width: 90%"
         >
-          <div
-            class="relative h-full overflow-hidden rounded-lg"
-            style="height: 30em"
-          >
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="./gate.jpg"
+                src="./after hackathon.JPG"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="./poster at gate.jpg"
+                src="./explain1.JPG"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="./gate.jpg"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
@@ -862,6 +875,13 @@
             </div>
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
+                src="./principle_invite.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
                 src="./inuguration2.jpg"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
@@ -869,7 +889,7 @@
             </div>
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="component.jpg"
+                src="./distribution.JPG"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
@@ -883,27 +903,14 @@
             </div>
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
               <img
-                src="./explain1.JPG"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="./after hackathon.JPG"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="./distribution.JPG"
+                src="./poster at gate.jpg"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 alt="..."
               />
             </div>
           </div>
           <div
-            class="absolute z-30 flex -translate-x-1/2 bottom-9 left-1/2 space-x-3 rtl:space-x-reverse"
+            class="absolute z-30 flex -translate-x-1/2 bottom-10 left-1/2 space-x-3 rtl:space-x-reverse"
           >
             <button
               type="button"
@@ -939,6 +946,41 @@
               aria-current="false"
               aria-label="Slide 5"
               data-carousel-slide-to="4"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 6"
+              data-carousel-slide-to="5"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 7"
+              data-carousel-slide-to="6"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 8"
+              data-carousel-slide-to="7"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 9"
+              data-carousel-slide-to="8"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 10"
+              data-carousel-slide-to="9"
             ></button>
           </div>
           <button
