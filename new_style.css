@@ -434,11 +434,23 @@ body {
 }
 
 #myBtn1 {
-  background: #000;
- color: #fff;
+  background-color: black;
+ color: #808080;
  z-index: 1;
  margin: 0;
  padding: 5px;
+ border-radius: 5px;
+ 
+}
+
+#myBtn1:hover{
+  color: white;
+}
+#myBtn2:hover{
+  color: white;
+}
+#myBtn3:hover{
+  color: white;
 }
 #myBtn1:after {
  position: absolute;
@@ -451,25 +463,17 @@ body {
  background: #e0e5ec;
  transition: all 0.3s ease;
 }
-#myBtn1:hover {
- color: #000;
- border-radius: 8px;
-}
-#myBtn1:hover:after {
- top: auto;
- bottom: 0;
- height: 100%;
-}
 #myBtn1:active {
  top: 2px;
 }
 
 #myBtn2 {
-  background: #000;
- color: #fff;
+  background-color: black;
+  color: #808080;
  z-index: 1;
  margin: 0;
  padding: 5px;
+ border-radius: 5px;
 }
 #myBtn2:after {
  position: absolute;
@@ -482,24 +486,17 @@ body {
  background: #e0e5ec;
  transition: all 0.3s ease;
 }
-#myBtn2:hover {
- color: #000;
- border-radius: 8px;
-}
-#myBtn2:hover:after {
- top: auto;
- bottom: 0;
- height: 100%;
-}
+
 #myBtn2:active {
  top: 2px;
 }
 #myBtn3 {
-  background: #000;
- color: #fff;
+  background-color: black;
+  color: #808080;
  z-index: 1;
  margin: 0;
  padding: 5px;
+ border-radius: 5px;
 }
 #myBtn3:after {
  position: absolute;
@@ -512,15 +509,7 @@ body {
  background: #e0e5ec;
  transition: all 0.3s ease;
 }
-#myBtn3:hover {
- color: #000;
- border-radius: 8px;
-}
-#myBtn3:hover:after {
- top: auto;
- bottom: 0;
- height: 100%;
-}
+
 #myBtn3:active {
  top: 2px;
 }
@@ -764,6 +753,7 @@ body {
   height: 100%;
   padding: 6px;
   border-radius: 20px;
+  filter: invert(100%);
 }
 
 #venue_content{
@@ -809,4 +799,50 @@ body {
   #venue_content img{
     height: 45%;
   }
+}
+
+#aboutelectroverse{
+  height: 80vh;
+  margin-top: 1em;
+}
+
+#aboutDepartment{
+  height: 80vh;
+  margin-top: 1em;
+}
+
+#aboutCollege{
+  height: 80vh;
+  margin-top: 1em;
+}
+
+#about_section{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+#gallery_photos div{
+  height: 90vh;
+}
+
+#gallery_photos div img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#members_main{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#members_main div{
+  height: 30vh;
+  margin: 2em ;
+  background-color: green;
 }

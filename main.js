@@ -38,20 +38,6 @@ function showSlide(index) {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  setInterval(changeContent, 5000);
-});
-
-function changeContent() {
-  const contents = document.querySelectorAll(".content");
-  const activeContent = document.querySelector(".content.active");
-  const nextIndex =
-    (Array.from(contents).indexOf(activeContent) + 1) % contents.length;
-
-  activeContent.classList.remove("active");
-  contents[nextIndex].classList.add("active");
-}
-
 function openContactPopup() {
   document.getElementById("overlay").style.display = "block";
   document.getElementById("contactPopup").style.display = "block";
@@ -92,19 +78,61 @@ function scrollToTop() {
   }
   scroll();
 }
+
+
+let slideshowPaused = false; // Variable to track the slideshow state
+
+document.addEventListener("DOMContentLoaded", function () {
+  setInterval(function () {
+    if (!slideshowPaused) {
+      changeContent();
+    }
+  }, 5000);
+});
+
+function changeContent() {
+  const contents = document.querySelectorAll(".content");
+  const activeContent = document.querySelector(".content.active");
+  const nextIndex =
+    (Array.from(contents).indexOf(activeContent) + 1) % contents.length;
+
+  activeContent.classList.remove("active");
+  contents[nextIndex].classList.add("active");
+}
+
+function toggleReadMoreSection(sectionNumber) {
+  var dots = document.getElementById("dots" + sectionNumber);
+  var moreText = document.getElementById("more" + sectionNumber);
+  var btnText = document.getElementById("myBtn" + sectionNumber);
+
+  if (dots.style.display === "none" || dots.style.display === "") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+    btnText.innerHTML = "Read More";
+    slideshowPaused = false; // Resume the slideshow
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+    btnText.innerHTML = "Read Less";
+    slideshowPaused = true; // Pause the slideshow
+  }
+}
+
 function toggleReadMoreSection1() {
   var dots = document.getElementById("dots1");
   var moreText = document.getElementById("more1");
   var btnText = document.getElementById("myBtn1");
 
   if (dots.style.display === "none" || dots.style.display === "") {
-      dots.style.display = "inline";
-      moreText.style.display = "none";
-      btnText.innerHTML = "Read More";
-  } else {
-      dots.style.display = "none";
-      moreText.style.display = "inline";
-      btnText.innerHTML = "Read Less";
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+    btnText.innerHTML = "Read More";
+    slideshowPaused = false; 
+  } else if (dots.style.display === "inline") {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+    btnText.innerHTML = "Read Less";
+    slideshowPaused = true; 
   }
 }
 
@@ -114,13 +142,15 @@ function toggleReadMoreSection2() {
   var btnText = document.getElementById("myBtn2");
 
   if (dots.style.display === "none" || dots.style.display === "") {
-      dots.style.display = "inline";
-      moreText.style.display = "none";
-      btnText.innerHTML = "Read More";
-  } else {
-      dots.style.display = "none";
-      moreText.style.display = "inline";
-      btnText.innerHTML = "Read Less";
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+    btnText.innerHTML = "Read More";
+    slideshowPaused = false; 
+  } else if (dots.style.display === "inline") {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+    btnText.innerHTML = "Read Less";
+    slideshowPaused = true; 
   }
 }
 
@@ -130,12 +160,14 @@ function toggleReadMoreSection3() {
   var btnText = document.getElementById("myBtn3");
 
   if (dots.style.display === "none" || dots.style.display === "") {
-      dots.style.display = "inline";
-      moreText.style.display = "none";
-      btnText.innerHTML = "Read More";
-  } else {
-      dots.style.display = "none";
-      moreText.style.display = "inline";
-      btnText.innerHTML = "Read Less";
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+    btnText.innerHTML = "Read More";
+    slideshowPaused = false; 
+  } else if (dots.style.display === "inline") {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+    btnText.innerHTML = "Read Less";
+    slideshowPaused = true; 
   }
 }
