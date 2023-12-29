@@ -139,10 +139,3 @@ function toggleReadMoreSection3() {
       btnText.innerHTML = "Read Less";
   }
 }
-
-import {
-  Carousel,
-  initTE,
-} from "tw-elements";
-
-initTE({ Carousel });
