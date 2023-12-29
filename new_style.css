@@ -440,7 +440,7 @@ body {
  margin: 0;
  padding: 5px;
  border-radius: 5px;
- 
+ cursor: pointer;
 }
 
 #myBtn1:hover{
@@ -474,6 +474,7 @@ body {
  margin: 0;
  padding: 5px;
  border-radius: 5px;
+ cursor: pointer;
 }
 #myBtn2:after {
  position: absolute;
@@ -497,6 +498,7 @@ body {
  margin: 0;
  padding: 5px;
  border-radius: 5px;
+ cursor: pointer;
 }
 #myBtn3:after {
  position: absolute;
@@ -835,14 +837,58 @@ body {
 
 #members_main{
   width: 100%;
-  height: 80vh;
+  height: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
 }
 
 #members_main div{
-  height: 30vh;
-  margin: 2em ;
-  background-color: green;
+  height: 14em;
+  width: 16em;
+  margin: 1em;
+}
+
+#members_main div img{
+  height: 90%;
+  width: 100%;
+  border-radius: 10px;
+}
+#members_main div h1{
+  height: 90%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  padding-top: 4px;
+}
+
+#logos{
+  width: 60%;
+  height: 14vh;
+  display: flex;
+}
+
+#logos #logo1{
+  height: 100%;
+  width: 16vh;
+  float: left;
+  padding: 5px;
+}
+#logos #logo2{
+  height: 100%  ;
+  width: 12vh;
+  float: right;
+  margin-right: 2em;
+  padding: 5px;
+}
+#logos #logo1 img{
+  height: 100%;
+  width: 100%;
+}
+#logos #logo2 img{
+  height: 100%;
+  width: 100%;
 }
