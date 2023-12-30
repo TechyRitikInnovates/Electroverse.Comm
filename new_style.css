@@ -779,7 +779,7 @@ body {
 #venue_content h2{
   font-size: 1.7rem;
   font-weight: 900;
-  color: green;
+  color: #26767A;
 }
 
 @media screen and (max-width: 580px) and (min-height: 580px) {
@@ -867,28 +867,54 @@ body {
 
 #logos{
   width: 60%;
-  height: 14vh;
+  height: 12vh;
   display: flex;
+  /* background-color: red; */
+  margin-top: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+#logos div{
+  padding: 3px;
 }
 
 #logos #logo1{
   height: 100%;
-  width: 16vh;
-  float: left;
-  padding: 5px;
+  width: 8em;
+  /* background: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#logos #logo2{
-  height: 100%  ;
-  width: 12vh;
-  float: right;
-  margin-right: 2em;
-  padding: 5px;
-}
+
 #logos #logo1 img{
   height: 100%;
   width: 100%;
 }
+
 #logos #logo2 img{
   height: 100%;
   width: 100%;
+}
+
+#logos #logo2{
+  height: 100%;
+  width: 5em;
+  /* background: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacer {
+  /* background-color: yellow; */
+  width: 35em; 
+  height: 100%;
+}
+
+@media screen and (max-width: 755px) and (min-height: 755px) {
+  .spacer {
+    width: 5em; 
+  }
 }
