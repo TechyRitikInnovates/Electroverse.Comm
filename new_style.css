@@ -145,6 +145,8 @@
 
 #timeline {
   background-color: #0e131f;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   background-color: #0e131f;
@@ -415,7 +417,6 @@ body {
 
 #about{
   margin-top: 3em;
-  margin-bottom: 3em;
 }
 
 
@@ -804,17 +805,17 @@ body {
 }
 
 #aboutelectroverse{
-  height: 80vh;
+  height: auto;
   margin-top: 1em;
 }
 
 #aboutDepartment{
-  height: 80vh;
+  height: auto;
   margin-top: 1em;
 }
 
 #aboutCollege{
-  height: 80vh;
+  height: auto;
   margin-top: 1em;
 }
 

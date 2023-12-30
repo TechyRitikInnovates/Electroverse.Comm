@@ -100,24 +100,6 @@ function changeContent() {
   contents[nextIndex].classList.add("active");
 }
 
-function toggleReadMoreSection(sectionNumber) {
-  var dots = document.getElementById("dots" + sectionNumber);
-  var moreText = document.getElementById("more" + sectionNumber);
-  var btnText = document.getElementById("myBtn" + sectionNumber);
-
-  if (dots.style.display === "none" || dots.style.display === "") {
-    dots.style.display = "inline";
-    moreText.style.display = "none";
-    btnText.innerHTML = "Read More";
-    slideshowPaused = false; // Resume the slideshow
-  } else {
-    dots.style.display = "none";
-    moreText.style.display = "inline";
-    btnText.innerHTML = "Read Less";
-    slideshowPaused = true; // Pause the slideshow
-  }
-}
-
 function toggleReadMoreSection1() {
   var dots = document.getElementById("dots1");
   var moreText = document.getElementById("more1");
