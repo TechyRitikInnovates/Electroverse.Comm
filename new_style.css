@@ -955,10 +955,10 @@ body {
 }
 
 @media screen and (max-width: 1150px) {
-  #First_logo{
-    width: 40%;
+  /* #First_logo{
+    width: 20%;
   }
   #Middle_Logo{
     width: 40%;
-  }
+  } */
 }
