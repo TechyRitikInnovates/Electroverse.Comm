@@ -904,6 +904,8 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-color: white;
+  border-width: 1px;
 }
 
 #First_logo{
