@@ -906,6 +906,8 @@ body {
   align-items: center;
   border-color: white;
   border-width: 1px;
+  border-left: none;
+  border-right: none;
 }
 
 #First_logo{
