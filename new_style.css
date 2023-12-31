@@ -1,7 +1,7 @@
 .bg {
   background-image: url(star.jpg);
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -896,28 +896,25 @@ body {
   width: 100%;
 }
 
-#logos #logo2 img{
-  height: 100%;
+#banner_section{
   width: 100%;
+  height: auto;
+  border: none;
 }
 
-#logos #logo2{
+#banner_div{
+  width: 100%;
   height: 100%;
-  width: 5em;
-  /* background: green; */
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
+  object-position: bottom;
+  border: none;
 }
 
-.spacer {
-  width: 35em; 
-  height: 100%;
+#banner_div img{
+  width: 100%;
+  height:15vh;
+  border: none;
 }
-
-@media screen and (max-width: 755px) and (min-height: 755px) {
-  .spacer {
-    width: 5em; 
-  }
-}
-
