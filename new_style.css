@@ -787,7 +787,7 @@ body {
   color: #26767A;
 }
 
-@media screen and (max-width: 580px) and (min-height: 580px) {
+@media screen and (max-width: 1030px) and (min-height: 1030px) {
   #venue_div{
     display: flex;
     flex-direction: column;
@@ -830,7 +830,7 @@ body {
   height: auto;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1030px) {
 #gallery_photos div{
   height: 90vh;
 }
@@ -912,6 +912,7 @@ body {
   border-width: 1px;
   border-left: none;
   border-right: none;
+  overflow: hidden;
 }
 
 #First_logo{
