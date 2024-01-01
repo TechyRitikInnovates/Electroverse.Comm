@@ -963,8 +963,9 @@ body {
 
 #Middle_Logo h2{
   color: white;
-  font-size: 2rem;
+  font-size:3vw;
   font-weight: 900;
+  text-wrap: wrap;
 }
 
 #wrapper {

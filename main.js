@@ -154,26 +154,6 @@ function toggleReadMoreSection3() {
   }
 }
 
-function changeTextToTSEC() {
-  var h2Element = document.querySelector('#Middle_Logo h2');
-  if (h2Element) {
-    h2Element.textContent = 'TSEC';
-  }
-}
-
-// Check the screen width and call the function accordingly
-function checkScreenWidth() {
-  if (window.innerWidth < 1150) {
-    changeTextToTSEC();
-  }
-}
-
-// Initial check on page load
-checkScreenWidth();
-
-// Listen for window resize events
-window.addEventListener('resize', checkScreenWidth); 
-
 const gap = 16;
 
 const carousel = document.getElementById("carousel"),
