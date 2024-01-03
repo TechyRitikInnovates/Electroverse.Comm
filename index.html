@@ -1,126 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electroverse.Comm</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Electroverse.Comm</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Russo+One"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background: #0e131f;
+        margin: 0;
+        padding: 0;
+      }
 
-  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-  <style>
-    body {
-      background: #0e131f;
-      margin: 0; /* Remove default margin */
-      padding: 0; /* Remove default padding */
-    }
+      svg {
+        font-family: "Russo One", sans-serif;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
 
-    svg {
-      font-family: 'Russo One', sans-serif;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    svg #text1 {
-      text-transform: uppercase;
-      animation: stroke 5s infinite alternate;
-      stroke-width: 2;
-      stroke: #365fa0;
-      font-size: 3rem;
-      font-weight: 900;
-    }
-
-    svg #text2 {
-      text-transform: uppercase;
-      animation: stroke 5s infinite alternate;
-      stroke-width: 2;
-      stroke: #365fa0;
-      font-size: 3rem;
-      font-weight: 900;
-    }
-
-    svg #text3 {
-      text-transform: uppercase;
-      animation: stroke 5s infinite alternate;
-      stroke-width: 2;
-      stroke: #365fa0;
-      font-size: 3rem;
-      font-weight: 900;
-    }
-    svg #text4 {
-      animation: stroke 5s infinite alternate;
-      stroke-width: 2;
-      stroke: #365fa0;
-      font-size: 3rem; 
-      font-weight: 600;
-    }
-
-    svg #text5 {
-      animation: stroke 5s infinite alternate;
-      stroke-width: 2;
-      stroke: #365fa0;
-      font-size: 3rem;
-      font-weight: 900;
-    }
-
-    @keyframes stroke {
-      0% {
-        fill: rgba(72, 138, 20, 0);
-        stroke: red;
-        stroke-dashoffset: 25%;
-        stroke-dasharray: 0 50%;
+      svg #text1 {
+        text-transform: uppercase;
+        animation: stroke 5s infinite alternate;
         stroke-width: 2;
+        stroke: #365fa0;
+        font-size: 3rem;
+        font-weight: 900;
       }
 
-      70% {
-        fill: rgba(72, 138, 20, 0);
-        stroke: orange;
+      svg #text2 {
+        text-transform: uppercase;
+        animation: stroke 5s infinite alternate;
+        stroke-width: 2;
+        stroke: #365fa0;
+        font-size: 3rem;
+        font-weight: 900;
       }
 
-      80% {
-        fill: rgba(72, 138, 20, 0);
-        stroke: yellow;
-        stroke-width: 3;
+      svg #text3 {
+        text-transform: uppercase;
+        animation: stroke 5s infinite alternate;
+        stroke-width: 2;
+        stroke: #365fa0;
+        font-size: 3rem;
+        font-weight: 900;
+      }
+      svg #text4 {
+        animation: stroke 5s infinite alternate;
+        stroke-width: 2;
+        stroke: #365fa0;
+        font-size: 3rem;
+        font-weight: 600;
       }
 
-      100% {
-        fill: white;
-        stroke: white;
-        stroke-dashoffset: -25%;
-        stroke-dasharray: 50% 0;
-        stroke-width: 0;
+      svg #text5 {
+        animation: stroke 5s infinite alternate;
+        stroke-width: 2;
+        stroke: #365fa0;
+        font-size: 3rem;
+        font-weight: 900;
       }
-    }
-  </style>
-</head>
 
-<body>
+      @keyframes stroke {
+        0% {
+          fill: rgba(72, 138, 20, 0);
+          stroke: red;
+          stroke-dashoffset: 25%;
+          stroke-dasharray: 0 50%;
+          stroke-width: 2;
+        }
 
-  <svg viewBox="0 0 1320 300">
-    <text x="50%" y="10%" text-anchor="middle">
-      <tspan id="text1" dy="1.5em" x="50%"><a href="">Thadomal Shahani Engineering College</a></tspan> 
-      <tspan id="text2" dy="1.5em" x="50%"><a href="">Department of EXTC Engineering</a></tspan> 
-      <tspan id="text3" dy="1.5em" x="50%"><a href="">(Electroverse.Comm)</a></tspan>
-      <tspan id="text4" dy="1.5em" x="50%"><a href="">Presents</a></tspan>
-      <tspan id="text5" dy="1.5em" x="50%"><a href="">TECH-A-THON'24</a></tspan>
-    </text>
-  </svg>
+        70% {
+          fill: rgba(72, 138, 20, 0);
+          stroke: orange;
+        }
 
-  <script>
-    // Wait for the document to be fully loaded
-    document.addEventListener('DOMContentLoaded', function () {
-      // Select the text3 element
-      var text3 = document.getElementById('text3');
+        80% {
+          fill: rgba(72, 138, 20, 0);
+          stroke: yellow;
+          stroke-width: 3;
+        }
 
-      // Get the animation duration in milliseconds (5s in this case)
-      var animationDuration = 5000;
+        100% {
+          fill: white;
+          stroke: white;
+          stroke-dashoffset: -25%;
+          stroke-dasharray: 50% 0;
+          stroke-width: 0;
+        }
+      }
+    </style>
+  </head>
 
-      // Set a timeout to redirect after the animation duration
-      setTimeout(function () {
-        window.location.href = 'index_main.html';
-      }, animationDuration);
-    });
-  </script>
-</body>
+  <body>
+    <svg viewBox="0 0 1320 300">
+      <text x="50%" y="10%" text-anchor="middle">
+        <tspan id="text1" dy="1.5em" x="50%">
+          <a href="#">Thadomal Shahani Engineering College</a>
+        </tspan>
+        <tspan id="text2" dy="1.5em" x="50%">
+          <a href="#">Department of EXTC Engineering</a>
+        </tspan>
+        <tspan id="text3" dy="1.5em" x="50%">
+          <a href="#">(Electroverse.Comm)</a>
+        </tspan>
+        <tspan id="text4" dy="1.5em" x="50%"><a href="#">Presents</a></tspan>
+        <tspan id="text5" dy="1.5em" x="50%">
+          <a href="#">TECH-A-THON'24</a>
+        </tspan>
+      </text>
+    </svg>
 
+    <script>
+      window.addEventListener("load", function () {
+        var text5 = document.getElementById("text3");
+        var animationDuration = 5000;
+        setTimeout(function () {
+          window.location.href = "index_main.html";
+        }, animationDuration);
+      });
+    </script>
+  </body>
 </html>
