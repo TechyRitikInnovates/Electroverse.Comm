@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const targetDate = new Date("December 31, 2023 23:59:59").getTime();
 
