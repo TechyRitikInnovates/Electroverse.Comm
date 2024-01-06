@@ -1,3 +1,21 @@
+function removeFileExtension(url) {
+  // Find the last occurrence of a dot (.) in the URL
+  var lastDotIndex = url.lastIndexOf('.');
+
+  // Check if a dot was found and remove the extension
+  if (lastDotIndex !== -1) {
+    return url.substring(0, lastDotIndex);
+  }
+
+  // If no dot is found, return the original URL
+  return url;
+}
+
+// Example usage:
+var urlWithExtension = "https://electroverse-comm.in";
+var urlWithoutExtension = removeFileExtension(urlWithExtension);
+console.log(urlWithoutExtension);
+
 document.addEventListener("DOMContentLoaded", function () {
   const targetDate = new Date("December 31, 2023 23:59:59").getTime();
 
